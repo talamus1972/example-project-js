@@ -9,7 +9,7 @@ export async function fetchEvents(page, keyword) {
   );
   return response.data;
 }
-async function fetchEventId(id) {
+export async function fetchEventId(id) {
   const response = await axios.get(
     `${BASE_URL}events.json?apikey=${API_KEY}&id=${id}`
   );

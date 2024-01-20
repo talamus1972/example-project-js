@@ -2,7 +2,7 @@ import { fetchEvents } from './api.js';
 import { page, reset } from './pagination.js';
 import { keyword } from './searchForm.js';
 
-const eventsList = document.querySelector('.events-list');
+export const eventsList = document.querySelector('.events-list');
 
 function createMarkup(events) {
   const markup = events
